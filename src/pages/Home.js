@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 // import components
 import Button from '../components/Button.js'
+import ClientReview from '../components/ClientReview.js'
 
 // import images
 import heroImage from '../assets/home/home-hero.jpg';
@@ -118,30 +119,12 @@ const Home = () => {
       <section className="mx-auto max-w-6xl my-20">
         <h2 className="my-8 text-center max-w-3xl mx-auto">Read what our past clients have to say about us</h2>
         <div className="grid grid-cols-3 gap-4">
-          <div className="border border-stone-200">
-            <p className="m-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et voluptate rerum eaque adipisci soluta placeat ad temporibus, laborum recusandae quas!
-            </p>
-            <p className="m-4 text-sm text-stone-500">
-              Johnny Appleseed
-            </p>
-          </div>
-          <div className="border border-stone-200">
-            <p className="m-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et voluptate rerum eaque adipisci soluta placeat ad temporibus, laborum recusandae quas!
-            </p>
-            <p className="m-4 text-sm text-stone-500">
-              Johnny Appleseed
-            </p>
-          </div>
-          <div className="border border-stone-200">
-            <p className="m-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et voluptate rerum eaque adipisci soluta placeat ad temporibus, laborum recusandae quas!
-            </p>
-            <p className="m-4 text-sm text-stone-500">
-              Johnny Appleseed
-            </p>
-          </div>
+          <ClientReview name="Johnny Appleseed" 
+            message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et voluptate rerum eaque adipisci soluta placeat ad temporibus, laborum recusandae quas!"/>
+          <ClientReview name="Johnny Appleseed" 
+            message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et voluptate rerum eaque adipisci soluta placeat ad temporibus, laborum recusandae quas!"/>
+          <ClientReview name="Johnny Appleseed" 
+            message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et voluptate rerum eaque adipisci soluta placeat ad temporibus, laborum recusandae quas!"/>
         </div>
       </section>
 
