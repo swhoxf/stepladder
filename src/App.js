@@ -2,8 +2,8 @@
 import { Route, Routes } from 'react-router-dom';
 
 // import assets and styles
-import logo from '../src/assets/logo.svg';
 import './App.css';
+import './index.css'
 
 // import pages
 import Home from './pages/Home';
@@ -15,7 +15,7 @@ import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div className="max-w-screen-lg mx-auto">
+    <div>
     <NavBar />
     <Routes>
       <Route path="/" element={<Home />} />

@@ -1,23 +1,34 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
 
+// import assets
+import logo from "../assets/logo/logo-color-reversed.png";
+
 const NavBar = () => {
   return (
-    <div>
-      <ul className="flex justify-center items-center gap-10 text-2xl pb-10">
+    <nav>
+      <ul className="flex justify-start items-center gap-10 text-base py-4 px-12 bg-cyan-900 text-white w-screen">
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/"><img src={logo} alt="stepladder logo" className="h-10"/></Link>
+        </li>
+        <li className="relative after:absolute after:bg-green-500 after:h-1 after:w-full after:top-full after:left-0 after:scale-0 after:transition-transform after:duration-75">
+          <Link to="/about">Courses</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/contact">Coaching</Link>
         </li>
-
+        <li>
+          <Link to="/contact">Resources</Link>
+        </li>
         <li>
           <Link to="/contact">Contact</Link>
         </li>
+        <li>
+          <Link to="/contact">About</Link>
+        </li>
       </ul>
       <Outlet />
-    </div>
+    </nav>
   );
 };
 
