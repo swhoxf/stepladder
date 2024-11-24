@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Button from '../components/Button.js'
 import ClientReview from '../components/ClientReview.js'
 import Card from '../components/Card.js'
+import SignUpSection from '../components/SignUpSection.js'
 
 // import images
 import heroImage from '../assets/home/home-hero.jpg';
@@ -110,15 +111,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="flex max-w-6xl mx-auto my-20 justify-between items-end">
-        <div className="max-w-2xl">
-          <h2 className="my-4">Read to take the next step?</h2>
-          <p className="my-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et voluptate rerum eaque adipisci soluta placeat ad temporibus, laborum recusandae quas!
-          </p>
-        </div>
-        <Button label="Take your first step" />
-      </section>
+      <SignUpSection />
     </>
   )
 };
