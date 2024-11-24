@@ -7,7 +7,7 @@ import { Facebook, Instagram, Mail} from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="py-20 px-12 bg-stone-200 w-screen text-black">
+    <footer className="py-20 px-12 bg-stone-100 w-screen text-black">
       <div className="flex mb-8 gap-16">
         <div className="pd-2">
           <Link to="/"><img src={logo} alt="stepladder logo" className="h-10 mb-8"/></Link>
