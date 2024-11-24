@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 // import components
 import Button from '../components/Button.js'
 import ClientReview from '../components/ClientReview.js'
+import Card from '../components/Card.js'
 
 // import images
 import heroImage from '../assets/home/home-hero.jpg';
@@ -88,31 +89,12 @@ const Home = () => {
         </div>
 
         <div className="grid grid-cols-3 gap-4">
-          <div className="bg-stone-100 p-4">
-            <p>Header</p>
-            <p className="text-sm text-stone-500">Subheader</p>
-          </div>
-          <div className="bg-stone-100 p-4">
-            <p>Header</p>
-            <p className="text-sm text-stone-500">Subheader</p>
-          </div>
-          <div className="bg-stone-100 p-4">
-            <p>Header</p>
-            <p className="text-sm text-stone-500">Subheader</p>
-          </div>
-          <div className="bg-stone-100 p-4">
-            <p>Header</p>
-            <p className="text-sm text-stone-500">Subheader</p>
-          </div>
-          <div className="bg-stone-100 p-4">
-            <p>Header</p>
-            <p className="text-sm text-stone-500">Subheader</p>
-          </div>
-          <div className="bg-stone-100 p-4">
-            <p>Header</p>
-            <p className="text-sm text-stone-500">Subheader</p>
-          </div>
-
+          <Card header="Header" subheader="Subheader" />
+          <Card header="Header" subheader="Subheader" />
+          <Card header="Header" subheader="Subheader" />
+          <Card header="Header" subheader="Subheader" />
+          <Card header="Header" subheader="Subheader" />
+          <Card header="Header" subheader="Subheader" />
         </div>
       </section>
 
