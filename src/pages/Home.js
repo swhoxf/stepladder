@@ -2,6 +2,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// import components
+import Button from '../components/Button.js'
+
 // import images
 import heroImage from '../assets/home/home-hero.jpg';
 
@@ -21,7 +24,7 @@ const Home = () => {
             voluptate rerum eaque adipisci soluta placeat ad temporibus, laborum
             recusandae quas!
           </p>
-          <button className="bg-cyan-600 text-white px-8 py-4 my-4">Take your first step</button>
+          <Button label="Take your first step" />
         </div>
         <div className="w-100">
           <img src={heroImage} alt="man looking at keyboard"/>
@@ -149,7 +152,7 @@ const Home = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et voluptate rerum eaque adipisci soluta placeat ad temporibus, laborum recusandae quas!
           </p>
         </div>
-        <button className="bg-cyan-600 text-white px-8 py-4 my-4 h-fit">Take your first step</button>
+        <Button label="Take your first step" />
       </section>
     </>
   )
