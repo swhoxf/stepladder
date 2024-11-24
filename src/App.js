@@ -12,6 +12,7 @@ import Contact from './pages/Contact';
 
 // import components
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
     </Routes>
+    <Footer />
   </div>
   );
 }
