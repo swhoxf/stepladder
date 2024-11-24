@@ -23,8 +23,16 @@ nav a {
   font-family: 'halogen', sans-serif;
 }
 
+h1, h2, h3, h4 {
+  font-family: 'halogen', sans-serif;
+}
+
 h1 {
   font-size: 2rem;
-  font-family: 'halogen', sans-serif;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 1.75rem;
   font-weight: 200;
 }
