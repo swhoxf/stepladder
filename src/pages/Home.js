@@ -10,6 +10,8 @@ import SignUpSection from '../components/SignUpSection.js'
 
 // import images
 import heroImage from '../assets/home/home-hero.jpg';
+import plusPattern from '../assets/decorative/plus-pattern.svg'
+import arcLines from '../assets/decorative/arc-lines.svg'
 
 // import icons
 import { Apple } from 'lucide-react';
@@ -19,7 +21,9 @@ const Home = () => {
     <>
       <HeroSection />
       
-      <section className="max-w-xl text-center my-20 mx-auto px-12">
+      <section className="max-w-2xl text-center my-48 mx-auto px-12 relative">
+        <img src={plusPattern} alt="" className="left-[-1rem] top-[-2.5rem] absolute" />
+        <img src={arcLines} alt="" className="absolute right-[-2rem]" />
         <h2 className="m-4">Small fiancial changes can make a <span className="font-black italic">big difference</span></h2>
         <p className="m-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et voluptate rerum eaque adipisci soluta placeat ad temporibus, laborum recusandae quas!
