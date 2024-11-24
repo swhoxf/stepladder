@@ -3,7 +3,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // import components
-import Button from '../components/Button.js'
 import ClientReview from '../components/ClientReview.js'
 import Card from '../components/Card.js'
 import HeroSection from '../components/HeroSection.js'
@@ -20,14 +19,14 @@ const Home = () => {
     <>
       <HeroSection />
       
-      <section className="max-w-xl text-center my-20 mx-auto">
+      <section className="max-w-xl text-center my-20 mx-auto px-12">
         <h2 className="m-4">Small fiancial changes can make a <span className="font-black italic">big difference</span></h2>
         <p className="m-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et voluptate rerum eaque adipisci soluta placeat ad temporibus, laborum recusandae quas!
         </p>
       </section>
 
-      <section className="text-center bg-stone-100">
+      <section className="text-center bg-stone-100 px-12">
         <div className="py-20 mx-auto max-w-4xl">
           <h2 className="m-4">We've been serving our community for years</h2>
           <p className="max-w-xl mx-auto">
@@ -62,7 +61,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl my-40">
+      <section className="mx-auto max-w-7xl my-40 px-12">
         <div className="flex gap-8 my-20">
           <div className="max-w-lg">
             <img src={heroImage} alt="placeholder" />
@@ -85,7 +84,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl my-20">
+      <section className="mx-auto max-w-6xl my-20 px-12">
         <h2 className="my-8 text-center max-w-3xl mx-auto">Read what our past clients have to say about us</h2>
         <div className="grid grid-cols-3 gap-4">
           <ClientReview name="Johnny Appleseed" 

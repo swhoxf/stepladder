@@ -6,7 +6,7 @@ import Button from '../components/Button.js'
 
 const SignUpSection = () => {
   return (
-    <section className="flex max-w-6xl mx-auto my-20 justify-between items-end">
+    <section className="flex max-w-6xl mx-auto my-20 justify-between items-end px-12" >
       <div className="max-w-2xl">
         <h2 className="my-4">Ready to take the next step?</h2>
         <p className="my-4">

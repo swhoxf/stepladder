@@ -6,6 +6,7 @@ import Button from '../components/Button.js'
 
 // import images
 import heroImage from '../assets/home/home-hero.jpg';
+import linesVerticalAscending from '../assets/decorative/lines-vertical-ascending.svg'
 
 const HeroSection = () => {
   return (
@@ -21,8 +22,9 @@ const HeroSection = () => {
         </p>
         <Button label="Take your first step" />
       </div>
-      <div className="w-100">
-        <img src={heroImage} alt="man looking at keyboard"/>
+      <div className="relative">
+        <img src={heroImage} alt="man looking at keyboard" className="shadow-[20px_20px_teal] h-96"/>
+        <img src={linesVerticalAscending} alt="" className="absolute right-10 top-1/3 h-2/3" />
       </div>
     </section>
   )
