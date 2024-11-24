@@ -10,10 +10,10 @@ import linesVerticalAscending from '../assets/decorative/lines-vertical-ascendin
 
 const HeroSection = () => {
   return (
-    <section className="hero mx-auto max-w-7xl flex gap-8 pt-20 justify-center my-20">
-      <div className="my-20 min-w-96 max-w-64 w-56">
+    <section className="hero mx-auto max-w-8xl flex gap-8 pt-20 justify-center my-20">
+      <div className="my-20 max-w-96 flex-grow">
         <h1 className="my-4">
-          Financial stability is <span className="font-black italic relative before:absolute before:bg-orange-400 before:h-3 before:w-full before:bottom-1 before:right-2 before:z-[-1]">within reach</span>
+          Financial stability is <span className="font-black italic relative before:absolute before:bg-orange-400 before:h-3 before:w-[120%] before:bottom-1 before:left-[-10px] before:z-[-1]">within</span> <span className="font-black italic relative before:absolute before:bg-orange-400 before:h-3 before:w-[120%] before:bottom-1 before:left-[-10px] before:z-[-1]">reach</span>
         </h1>
         <p className="my-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et
