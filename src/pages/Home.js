@@ -7,6 +7,7 @@ import ClientReview from '../components/ClientReview.js'
 import Card from '../components/Card.js'
 import HeroSection from '../components/HeroSection.js'
 import SignUpSection from '../components/SignUpSection.js'
+import Metric from '../components/Metric.js'
 
 // import images
 import heroImage from '../assets/home/home-hero.jpg';
@@ -32,35 +33,23 @@ const Home = () => {
 
       <section className="text-center bg-stone-100 px-12">
         <div className="py-20 mx-auto max-w-4xl">
-          <h2 className="m-4">We've been serving our community for years</h2>
-          <p className="max-w-xl mx-auto">
+          <h2 className="my-4">We've been serving our community for years</h2>
+          <p className="max-w-xl mx-auto my-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et voluptate rerum eaque adipisci soluta placeat ad temporibus, laborum recusandae quas!
           </p>
-          <div className="flex gap-12 justify-center m-4">
-            <div className="max-w-48 flex flex-col gap-8 justify-center">
-              <Apple className="mx-auto"/>
-              <h3>Savings</h3>
-              <p className="text-3xl">Nearly $750</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-            <div className="max-w-48 flex flex-col gap-8 justify-center">
-              <Apple className="mx-auto"/>
-              <h3>Customers</h3>
-              <p className="text-3xl">Nearly $750</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-            <div className="max-w-48 flex flex-col gap-8 justify-center">
-              <Apple className="mx-auto"/>
-              <h3>Support</h3>
-              <p className="text-3xl">Nearly $750</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
+          <div className="flex gap-12 justify-center m-16">
+            <Metric icon={<Apple className="mx-auto" />} 
+              category="Savings" 
+              message="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+              statistic="Nearly $750" />
+            <Metric icon={<Apple className="mx-auto" />} 
+              category="Clients" 
+              message="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+              statistic="Nearly $750" />
+            <Metric icon={<Apple className="mx-auto" />} 
+              category="Support" 
+              message="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+              statistic="Nearly $750" />
           </div>
         </div>
       </section>
