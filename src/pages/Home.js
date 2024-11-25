@@ -13,6 +13,9 @@ import Metric from '../components/Metric.js'
 import heroImage from '../assets/home/home-hero.jpg';
 import plusPattern from '../assets/decorative/plus-pattern.svg'
 import arcLines from '../assets/decorative/arc-lines.svg'
+import screentoneSquare from '../assets/decorative/screentone-square.svg'
+import triangle from '../assets/decorative/triangle.svg'
+import caretsAscending from '../assets/decorative/carets-ascending.svg'
 
 // import icons
 import { Apple } from 'lucide-react';
@@ -59,7 +62,10 @@ const Home = () => {
           <div className="max-w-lg">
             <img src={heroImage} alt="placeholder" />
           </div>
-          <div>
+          <div className="relative">
+            <img src={triangle} alt="" className="absolute top-10 left-[-6rem]"/>
+            <img src={screentoneSquare} alt="" className="absolute top-[-1rem] left-[-2rem]"/>
+            <img src={caretsAscending} alt="" className="absolute left-64 top-10"/>
             <h2 className="mt-20">What we offer</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et voluptate rerum eaque adipisci soluta placeat ad temporibus, laborum recusandae quas!
