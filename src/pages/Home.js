@@ -25,7 +25,7 @@ const Home = () => {
     <>
       <HeroSection />
       
-      <section className="max-w-2xl text-center my-48 mx-auto px-12 relative">
+      <section className="max-w-2xl text-center my-52 mx-auto px-12 relative">
         <img src={plusPattern} alt="" className="left-[-1rem] top-[-2.5rem] absolute" />
         <img src={arcLines} alt="" className="absolute right-[-2rem]" />
         <h2 className="m-4">Small fiancial changes can make a <span className="font-black italic">big difference</span></h2>
@@ -34,7 +34,7 @@ const Home = () => {
         </p>
       </section>
 
-      <section className="text-center bg-stone-100 px-12">
+      <section className="text-center bg-stone-100 my-20">
         <div className="py-20 mx-auto max-w-4xl">
           <h2 className="my-4">We've been serving our community for years</h2>
           <p className="max-w-xl mx-auto my-4">
@@ -83,7 +83,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl my-20 px-12">
+      <section className="mx-auto max-w-6xl my-40 px-12">
         <h2 className="my-8 text-center max-w-3xl mx-auto">Read what our past clients have to say about us</h2>
         <div className="grid grid-cols-3 gap-4">
           <ClientReview name="Johnny Appleseed" 
