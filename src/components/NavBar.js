@@ -1,6 +1,8 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
 
+import NavBarItem from "./NavBarItem";
+
 // import assets
 import logo from "../assets/logo/logo-color-reversed.png";
 
@@ -11,21 +13,11 @@ const NavBar = () => {
         <li>
           <Link to="/"><img src={logo} alt="stepladder logo" className="h-10"/></Link>
         </li>
-        <li className="relative after:absolute after:bg-green-500 after:h-1 after:w-full after:top-full after:left-0 after:scale-0 after:transition-transform after:duration-75">
-          <Link to="/about">Courses</Link>
-        </li>
-        <li>
-          <Link to="/contact">Coaching</Link>
-        </li>
-        <li>
-          <Link to="/contact">Resources</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-        <li>
-          <Link to="/contact">About</Link>
-        </li>
+        <NavBarItem to="/about" label="Courses"/>
+        <NavBarItem to="/about" label="Coaching"/>
+        <NavBarItem to="/about" label="Resources"/>
+        <NavBarItem to="/contact" label="Contact"/>
+        <NavBarItem to="/about" label="About"/>
       </ul>
       <Outlet />
     </nav>

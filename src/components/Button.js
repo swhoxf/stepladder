@@ -3,7 +3,7 @@ import React from "react";
 
 const Button = (props) => {
   return (
-    <button className="bg-cyan-600 text-white px-8 py-4 my-4">{ props.label }</button>
+    <button className="relative bg-cyan-600 text-white px-8 py-4 my-4">{ props.label }</button>
   )
 }
 
