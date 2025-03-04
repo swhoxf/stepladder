@@ -16,15 +16,15 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div>
-    <NavBar />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="about" element={<About />} />
-      <Route path="contact" element={<Contact />} />
-    </Routes>
-    <Footer />
-  </div>
+    <div class="overflow-x-clip">
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </div>
   );
 }
 
