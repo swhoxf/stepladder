@@ -13,9 +13,9 @@ const NavBar = () => {
         <li>
           <Link to="/"><img src={logo} alt="stepladder logo" className="h-10"/></Link>
         </li>
-        <NavBarItem to="/about" label="Courses"/>
-        <NavBarItem to="/about" label="Coaching"/>
-        <NavBarItem to="/about" label="Resources"/>
+        <NavBarItem to="/courses" label="Courses"/>
+        <NavBarItem to="/coaching" label="Coaching"/>
+        <NavBarItem to="/resources" label="Resources"/>
         <NavBarItem to="/contact" label="Contact"/>
         <NavBarItem to="/about" label="About"/>
       </ul>

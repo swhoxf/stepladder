@@ -1,26 +1,30 @@
-import logo from '../assets/logo.svg';
-import '../App.css';
+// import utilities
+import React from "react";
+import { Link } from "react-router-dom";
 
-function About() {
+// import components
+import Card from '../components/Card.js'
+import HeroSection from '../components/HeroSection.js'
+import SignUpSection from '../components/SignUpSection.js'
+
+// import images
+import heroImage from '../assets/home/home-hero.jpg';
+import plusPattern from '../assets/decorative/plus-pattern.svg'
+import arcLines from '../assets/decorative/arc-lines.svg'
+import screentoneSquare from '../assets/decorative/screentone-square.svg'
+import triangle from '../assets/decorative/triangle.svg'
+import caretsAscending from '../assets/decorative/carets-ascending.svg'
+
+// import icons
+import { Apple } from 'lucide-react';
+
+const Home = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1 className="text-3xl font-bold underline">About</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+      <HeroSection />
+      <SignUpSection />
+    </>
+  )
+};
 
-export default About;
+export default Home;
