@@ -21,9 +21,18 @@ import caretsAscending from '../assets/decorative/carets-ascending.svg'
 import { Apple } from 'lucide-react';
 
 const Home = () => {
+  const headerMainText = "Financial stability is "
+  const headerHighlightedText = "within reach"
+  const headerDescription = "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+
   return (
     <>
-      <HeroSection />
+      <HeroSection 
+        headerMainText = { headerMainText }
+        headerHighlightedText = { headerHighlightedText }
+        description =  { headerDescription }
+        heroImage = { heroImage }
+      />
       
       <section className="max-w-2xl text-center my-52 mx-auto px-12 relative">
         <img src={plusPattern} alt="" className="left-[-1rem] top-[-2.5rem] absolute" />
